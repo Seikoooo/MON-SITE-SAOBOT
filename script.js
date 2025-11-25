@@ -7,10 +7,17 @@ const initYear = () => {
 
 const initSmoothScroll = () => {
 	document.addEventListener('click', (event) => {
-		const trigger = event.target.closest('[data-scroll]');
+		const trigger = event.target.closest('[data-scroll], a[href^="#"]');
 		if (!trigger) return;
 
-		const selector = trigger.getAttribute('data-scroll');
+		let selector = trigger.getAttribute('data-scroll');
+		if (!selector && trigger.tagName === 'A') {
+			const href = trigger.getAttribute('href');
+			if (href && href.startsWith('#') && href.length > 1) {
+				selector = href;
+			}
+		}
+
 		const target = selector ? document.querySelector(selector) : null;
 		if (target) {
 			event.preventDefault();
@@ -108,10 +115,65 @@ const initCanvas = () => {
 	requestAnimationFrame(draw);
 };
 
+const initSectionAnimations = () => {
+	const sections = document.querySelectorAll('.animate-section');
+	if (!sections.length) return;
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('section-visible');
+				observer.unobserve(entry.target);
+			}
+		});
+	}, { threshold: 0.2 });
+
+	sections.forEach((section) => observer.observe(section));
+};
+
+const initCounters = () => {
+	const counters = document.querySelectorAll('.count-up');
+	if (!counters.length) return;
+
+	const easeOutCubic = (t) => 1 - (1 - t) ** 3;
+
+	const animateCounter = (el) => {
+		const targetValue = Number(el.dataset.count) || 0;
+		const suffix = el.dataset.suffix || '';
+		const duration = Number(el.dataset.duration) || 2800;
+		const start = performance.now();
+
+		const tick = (now) => {
+			const progress = Math.min((now - start) / duration, 1);
+			const eased = easeOutCubic(progress);
+			const current = Math.round(eased * targetValue);
+			el.textContent = `${current}${suffix}`;
+			if (progress < 1) requestAnimationFrame(tick);
+		};
+
+		requestAnimationFrame(tick);
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting && entry.target.dataset.animated !== 'true') {
+				entry.target.dataset.animated = 'true';
+				animateCounter(entry.target);
+				observer.unobserve(entry.target);
+			}
+		});
+	}, { threshold: 0.6 });
+
+	counters.forEach((counter) => observer.observe(counter));
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+	document.body.classList.add('motion-ready');
 	initYear();
 	initSmoothScroll();
 	initRevealObserver();
 	initFaq();
 	initCanvas();
+	initSectionAnimations();
+	initCounters();
 });
