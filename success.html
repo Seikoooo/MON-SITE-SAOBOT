@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paiement réussi - SAOBOT</title>
+	<meta name="description" content="Paiement confirmé. Votre licence SAOBOT a été créée. Vérifiez votre boîte mail pour les détails.">
+	<link rel="icon" type="image/x-icon" href="colorbot.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<canvas id="grid-canvas" aria-hidden="true"></canvas>
+	<header class="site-header">
+		<div class="logo">
+			<img src="colorbot.ico" alt="Logo SAOBOT">
+			<span>SAO</span><span>BOT</span>
+		</div>
+		<nav>
+			<a href="index.html#features">Fonctionnalités</a>
+			<a href="index.html#pricing">Offre</a>
+			<a href="index.html#faq">FAQ</a>
+		</nav>
+		<div class="header-cta">
+			<a href="index.html#pricing" class="ghost glow-btn gold-glow">Acheter</a>
+			<a class="primary glow-btn" href="downloads/saobot-latest.zip" download title="Télécharger SAOBOT (build à venir)">Télécharger</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero animate-section" id="success">
+			<div class="hero-text reveal">
+				<p class="eyebrow">Paiement confirmé</p>
+				<h1>Merci pour le paiement</h1>
+				<p class="lead">
+					Une licence vous a été créée. Vérifiez maintenant votre boîte mail, c'est là qu'elle vous sera envoyée.
+				</p>
+				<div class="hero-cta">
+					<a href="index.html" class="primary glow-btn">Retour à l'accueil</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>© <span id="year"></span> SAOBOT. Tous droits réservés.</p>
+		<p>Produit non affilié à Riot Games. Utilisation à vos risques.</p>
+	</footer>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
