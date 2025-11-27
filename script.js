@@ -9,6 +9,10 @@ const translations = {
 		'nav.pricing': 'Tarifs',
 		'nav.faq': 'FAQ',
 		'lang.switch': 'Changer de langue',
+		'meta.title.failure': 'Paiement échoué - SAOBOT',
+		'meta.description.failure': 'Paiement échoué. Veuillez réessayer votre achat de licence SAOBOT.',
+		'meta.title.success': 'Paiement confirmé - SAOBOT',
+		'meta.description.success': 'Paiement confirmé. Votre licence SAOBOT a été créée. Vérifiez votre boîte mail pour les détails.',
 		'header.buy': 'Acheter',
 		'header.download': 'Télécharger',
 		'header.download.title': 'Télécharger l\'installateur SAOBOT',
@@ -106,12 +110,19 @@ const translations = {
 		'pricing.buy': 'Acheter maintenant',
 		'pricing.download': 'Télécharger',
 		'cta.eyebrow': 'Activation rapide',
-		'cta.heading': 'Prêt à activer SAOBOT ?'
-		,
+		'cta.heading': 'Prêt à activer SAOBOT ?',
 		'cta.copy': 'Débloquez le pack ULTIMATE, profitez de performances optimisées pour le classé et lancez votre session découverte d\'une heure avec la licence SAO-TRIAL avant de viser RADIANT.',
 		'cta.buy': 'Acheter',
 		'cta.discord': 'Discord',
 		'cta.download': 'Télécharger',
+		'failure.eyebrow': 'Erreur de paiement',
+		'failure.heading': 'Paiement échoué',
+		'failure.copy': 'Impossible de traiter la transaction. Réessayez ou contactez le support pour obtenir de l\'aide.',
+		'failure.cta': 'Réessayer',
+		'success.eyebrow': 'Paiement confirmé',
+		'success.heading': 'Merci pour votre achat',
+		'success.copy': 'Votre licence SAOBOT a été générée. Vérifiez votre boîte mail pour les détails d\'activation et les étapes suivantes.',
+		'success.cta': 'Retour à l\'accueil',
 		'faq.eyebrow': 'FAQ',
 		'faq.heading': 'Vos questions, nos réponses',
 		'faq.q1': 'Comment l\'aim assist reste-t-il discret ?',
@@ -140,7 +151,8 @@ const translations = {
 		'faq.a12': 'Cartes bancaires (Visa, Mastercard), PayPal et crypto (BTC, ETH, USDT). Renouvellement mensuel automatique avec pause ou rechargement manuel.',
 		'faq.q13': 'Comment se passe l\'activation de la licence ?',
 		'faq.a13': 'Chaque licence se lie à un PC via empreinte hardware. Les paiements sont mensuels sans engagement et l\'accès se met en pause si vous arrêtez de renouveler.',
-		'footer.copy': '© <span id="year"></span> SAOBOT. Tous droits réservés.'
+		'footer.copy': '© <span id="year"></span> SAOBOT. Tous droits réservés.',
+		'footer.disclaimer': 'Produit non affilié à Riot Games. Utilisation à vos risques.'
 	},
 };
 
