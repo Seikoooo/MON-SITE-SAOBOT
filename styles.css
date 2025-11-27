@@ -42,6 +42,11 @@ button {
 	transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
 }
 
+button:disabled {
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+
 button:focus-visible,
 a:focus-visible {
 	outline: 2px dashed var(--accent);
@@ -136,6 +141,11 @@ nav a:hover {
 	justify-content: center;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.checkout-btn.is-loading {
+	pointer-events: none;
+	box-shadow: none;
 }
 
 .primary {
