@@ -167,6 +167,24 @@ const initCounters = () => {
 	counters.forEach((counter) => observer.observe(counter));
 };
 
+const initCheckoutRedirect = () => {
+	const buttons = document.querySelectorAll('[data-checkout-url]');
+	if (!buttons.length) return;
+
+	buttons.forEach((button) => {
+		button.addEventListener('click', () => {
+			const url = button.getAttribute('data-checkout-url');
+			if (!url) return;
+			button.disabled = true;
+			button.classList.add('is-loading');
+			const originalText = button.dataset.originalText || button.textContent;
+			button.dataset.originalText = originalText;
+			button.textContent = 'Redirection...';
+			window.location.href = url;
+		});
+	});
+};
+
 document.addEventListener('DOMContentLoaded', () => {
 	document.body.classList.add('motion-ready');
 	initYear();
@@ -176,4 +194,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	initCanvas();
 	initSectionAnimations();
 	initCounters();
+	initCheckoutRedirect();
 });
