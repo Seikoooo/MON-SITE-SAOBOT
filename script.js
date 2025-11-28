@@ -151,6 +151,10 @@ const translations = {
 		'faq.a12': 'Cartes bancaires (Visa, Mastercard), PayPal et crypto (BTC, ETH, USDT). Renouvellement mensuel automatique avec pause ou rechargement manuel.',
 		'faq.q13': 'Comment se passe l\'activation de la licence ?',
 		'faq.a13': 'Chaque licence se lie à un PC via empreinte hardware. Les paiements sont mensuels sans engagement et l\'accès se met en pause si vous arrêtez de renouveler.',
+		'faq.q14': 'Puis-je utiliser SAOBOT sans Arduino ?',
+		'faq.a14': 'Non. L\'Arduino Leonardo gère l\'injection HID sécurisée et le spoofing afin de garder les entrées furtives. Sans lui, les modules critiques refusent de démarrer pour des raisons de sécurité.',
+		'faq.q15': 'Je n\'ai pas reçu ma licence, que faire ?',
+		'faq.a15': 'Commencez par vérifier vos dossiers spam ou promotions : 90 % des mails manquants s\'y trouvent en quelques minutes. Contactez le support uniquement après cette vérification pour éviter les doublons.',
 		'footer.copy': '© <span id="year"></span> SAOBOT. Tous droits réservés.',
 		'footer.disclaimer': 'Produit non affilié à Riot Games. Utilisation à vos risques.'
 	},
