@@ -1159,6 +1159,28 @@ footer {
 	margin-top: 3rem;
 }
 
+.footer-legal {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.6rem;
+	margin-bottom: 0.8rem;
+	font-size: 0.82rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08rem;
+}
+
+.footer-link {
+	color: var(--text-muted);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+	color: var(--text);
+}
+
 .reveal.revealed {
 	opacity: 1;
 	transform: translateY(0);
