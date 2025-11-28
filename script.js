@@ -16,7 +16,7 @@ const translations = {
 		'header.download': 'Download',
 		'header.download.title': 'Download the SAOBOT installer',
 		'hero.eyebrow': 'Educational assistance suite',
-		'hero.heading': 'Master techniques with <span class="accent">SAOBOT</span>',
+		'hero.heading': 'Master your aim with <span class="accent">SAOBOT</span>',
 		'hero.lead': 'Designed for educational and learning environments, SAOBOT combines aim assist, auto aim, recoil control, and hardware spoofing for ultra-stable, discreet sessions. Educational tool only.',
 		'hero.planButton': '€9.99/month plan',
 		'hero.discord': 'Join Discord',
@@ -217,7 +217,7 @@ const translations = {
 		'header.download': 'Télécharger',
 		'header.download.title': 'Télécharger l\'installateur SAOBOT',
 		'hero.eyebrow': 'Suite d\'assistance éducative',
-		'hero.heading': 'Maîtrisez les techniques avec <span class="accent">SAOBOT</span>',
+		'hero.heading': 'Maîtrisez votre aim avec <span class="accent">SAOBOT</span>',
 		'hero.lead': 'Conçu pour les environnements éducatifs et d\'apprentissage, SAOBOT combine aim assist, auto aim, contrôle du recul et spoofing matériel pour des sessions ultra stables et discrètes. Outil pédagogique uniquement.',
 		'hero.planButton': 'Formule 9,99&nbsp;€ / mois',
 		'hero.discord': 'Rejoindre Discord',
@@ -647,10 +647,6 @@ const applyLanguage = (lang) => {
 		const key = el.dataset.i18n;
 		if (!key) return;
 		const fallback = el.dataset.i18nDefault ?? el.innerHTML;
-		if (lang === DEFAULT_LANG) {
-			el.innerHTML = fallback;
-			return;
-		}
 		const translated = dictionary[key];
 		if (typeof translated === 'string') {
 			el.innerHTML = translated;
@@ -663,10 +659,6 @@ const applyLanguage = (lang) => {
 		mappings.forEach(({ attr, key }) => {
 			const dataKey = attrDatasetKey(attr);
 			const fallback = el.dataset[dataKey] ?? el.getAttribute(attr) ?? '';
-			if (lang === DEFAULT_LANG) {
-				el.setAttribute(attr, fallback);
-				return;
-			}
 			const translated = dictionary[key];
 			if (typeof translated === 'string') {
 				el.setAttribute(attr, translated);
