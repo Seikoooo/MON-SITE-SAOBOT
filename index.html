@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-i18n="meta.title.home">SAOBOT</title>
+	<meta name="description" data-i18n-attr="content:meta.description.home" content="SAOBOT sharpens your precision with aim assist, auto aim, recoil control, and hardware spoofing.">
+	<link rel="icon" type="image/x-icon" href="assets/icons/colorbot.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+	<canvas id="grid-canvas" aria-hidden="true"></canvas>
+	<header class="site-header">
+		<div class="header-left">
+			<div class="logo">
+				<img src="assets/icons/colorbot.ico" alt="SAOBOT logo">
+				<span>SAO</span><span>BOT</span>
+			</div>
+			<div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch" aria-label="Language switch">
+				<button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">
+					<span class="flag" aria-hidden="true">🇫🇷</span>
+					<span>FR</span>
+				</button>
+				<button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">
+					<span class="flag" aria-hidden="true">🇺🇸</span>
+					<span>EN</span>
+				</button>
+			</div>
+		</div>
+		<nav>
+			<a href="#features" data-i18n="nav.features">Features</a>
+			<a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+			<a href="#faq" data-i18n="nav.faq">FAQ</a>
+		</nav>
+		<div class="header-cta">
+			<button class="ghost glow-btn gold-glow" data-scroll="#pricing" data-i18n="header.buy">Buy</button>
+			<a class="primary glow-btn" href="https://github.com/Seikoooo/SAOBOT-GUI-COLOROBT-EN/releases/download/2.0/SaobotSetup.exe" download title="Download the SAOBOT installer" data-i18n="header.download" data-i18n-attr="title:header.download.title">Download</a>
+		</div>
+	</header>
+
+	<div class="disclaimer-banner">
+		<p data-i18n="disclaimer.text">Warning: SAOBOT is an educational tool for learning programming, image analysis, and software automation. Any use for cheating in games is prohibited and the sole responsibility of the user. We are not affiliated with any game publishers and disclaim all responsibility for legal or other consequences.</p>
+	</div>
+
+	<main>
+		<section class="hero animate-section" id="download">
+			<div class="hero-text reveal">
+				<p class="eyebrow" data-i18n="hero.eyebrow">Tactical assistance suite</p>
+				<h1 data-i18n="hero.heading">Own every duel with <span class="accent">SAOBOT</span></h1>
+				<p class="lead" data-i18n="hero.lead">
+					Purpose-built for pro tactical FPS environments, SAOBOT blends aim assist,
+					auto aim, recoil control, and PID/HID/Arduino spoofing for ultra-stable, low-profile sessions.
+				</p>
+				<div class="hero-cta">
+					<button class="primary glow-btn gold-glow" data-scroll="#pricing" data-i18n="hero.planButton">€9.99/month plan</button>
+					<a class="secondary glow-btn" href="https://discord.gg/aQMcEPgUUa" target="_blank" rel="noopener" data-i18n="hero.discord">Join Discord</a>
+					<button class="ghost glow-btn gold-glow" data-scroll="#features" data-i18n="hero.modules">Browse modules</button>
+				</div>
+				<div class="hero-badges reveal delay-2" aria-label="Live SAOBOT status" data-i18n-attr="aria-label:hero.badges.aria">
+					<div class="badge-card tight-left">
+						<svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+							<circle cx="32" cy="32" r="20" class="badge-circle" />
+							<circle cx="32" cy="32" r="8" class="badge-dot" />
+						</svg>
+						<div>
+							<p class="badge-label" data-i18n="hero.badge1.title">Live tracking</p>
+							<span data-i18n="hero.badge1.subtitle">Smoothed vector path</span>
+						</div>
+					</div>
+					<div class="badge-card">
+						<svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+							<rect x="14" y="16" width="22" height="32" rx="6" class="badge-rect" />
+							<path d="M36 36 L52 46 L44 52" class="badge-line" />
+						</svg>
+						<div>
+							<p class="badge-label" data-i18n="hero.badge2.title">HID spoof</p>
+							<span data-i18n="hero.badge2.subtitle">Disguised Leonardo</span>
+						</div>
+					</div>
+					<div class="badge-card tight-left">
+						<svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+							<path d="M32 10 L50 20 V36 C50 44 42 54 32 58 C22 54 14 44 14 36 V20 Z" class="badge-shield" />
+							<path d="M24 32 L30 38 L40 26" class="badge-check" />
+						</svg>
+						<div>
+							<p class="badge-label" data-i18n="hero.badge3.title">Anti-flag watch</p>
+							<span data-i18n="hero.badge3.subtitle">Vanguard audit</span>
+						</div>
+					</div>
+				</div>
+				<div class="trial-banner reveal delay-1">
+					<p data-i18n="trial.blurb">Test SAOBOT free for 1 hour with the discovery license <strong>SAO-TRIAL</strong>.</p>
+					<div class="trial-meta">
+						<span class="code-pill" data-i18n="trial.metadata">License:&nbsp;SAO-TRIAL</span>
+						<span class="note" data-i18n="trial.note">Instant activation · Full modules · No card required</span>
+					</div>
+				</div>
+			</div>
+			<div class="hero-side">
+				<div class="hero-side-panel">
+					<div class="hero-card reveal delay-1">
+						<div class="holo-frame"></div>
+						<div class="card-content">
+							<p class="card-label" data-i18n="hero.card.label">Active profile</p>
+							<h2 class="gold-title">SAOBOT ULTIMATE</h2>
+							<ul>
+								<li data-i18n="hero.card.list1">Dynamic tracking built on MSS capture</li>
+								<li data-i18n="hero.card.list2">Arduino drives every mouse motion</li>
+								<li data-i18n="hero.card.list3">Cloaked HID injection</li>
+							</ul>
+							<button class="primary" data-scroll="#pricing" data-i18n="hero.card.button">Activate license</button>
+						</div>
+					</div>
+					<div class="hero-meta hero-stats reveal delay-2">
+						<div>
+							<span class="label" data-i18n="hero.stats.precision">Average accuracy</span>
+							<span class="value count-up" data-count="98" data-suffix="%" data-duration="4200">0%</span>
+						</div>
+						<div>
+							<span class="label" data-i18n="hero.stats.reaction">Reaction time</span>
+							<span class="value count-up" data-count="4" data-suffix=" ms" data-duration="4000">0 ms</span>
+						</div>
+						<div>
+							<span class="label" data-i18n="hero.stats.security">Last 12 months</span>
+							<span class="value count-up" data-count="0" data-suffix=" bans" data-duration="3600">0 bans</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners animate-section" aria-label="Signature SAOBOT modules" data-i18n-attr="aria-label:partners.aria">
+			<div class="partners-head section-head section-head-centered">
+				<p class="eyebrow" data-i18n="partners.eyebrow">Ecosystem</p>
+				<h2 data-i18n="partners.heading">SAOBOT systems squad</h2>
+				<p data-i18n="partners.copy">Every aimbot, triggerbot, and hardware spoofing module keeps a human signature while striking faster than the top-tier ranked meta.</p>
+			</div>
+			<div class="partners-marquee" aria-hidden="true">
+				<div class="marquee-track">
+					<span class="partner-chip">
+						<svg viewBox="0 0 80 32" role="img"><rect x="4" y="6" width="72" height="20" rx="10" /><circle cx="24" cy="16" r="5" /><circle cx="56" cy="16" r="5" /></svg>
+						<div>
+							<strong data-i18n="partners.chip1.title">Saobot Function</strong>
+							<span data-i18n="partners.chip1.desc">Colorbot + 4&nbsp;ms snap</span>
+						</div>
+					</span>
+					<span class="partner-chip">
+						<svg viewBox="0 0 80 32" role="img"><path d="M10 24 L26 8 L42 24 Z" /><circle cx="58" cy="16" r="8" /></svg>
+						<div>
+							<strong data-i18n="partners.chip2.title">Saobot Cheat</strong>
+							<span data-i18n="partners.chip2.desc">Triggerbot jitter 2-5&nbsp;ms</span>
+						</div>
+					</span>
+					<span class="partner-chip">
+						<svg viewBox="0 0 80 32" role="img"><rect x="10" y="10" width="24" height="12" /><rect x="46" y="8" width="24" height="16" rx="3" /></svg>
+						<div>
+							<strong data-i18n="partners.chip3.title">Saobot Suite</strong>
+							<span data-i18n="partners.chip3.desc">Multi-profile recoil macros</span>
+						</div>
+					</span>
+					<span class="partner-chip">
+						<svg viewBox="0 0 80 32" role="img"><circle cx="20" cy="16" r="10" /><path d="M38 10 H70 V22 H38 Z" /></svg>
+						<div>
+							<strong data-i18n="partners.chip4.title">Saobot spoofing</strong>
+							<span data-i18n="partners.chip4.desc">Invisible PID/HID spoof</span>
+						</div>
+					</span>
+					<span class="partner-chip">
+						<svg viewBox="0 0 80 32" role="img"><path d="M8 24 L20 8 L32 24 Z" /><rect x="42" y="8" width="30" height="16" rx="8" /></svg>
+						<div>
+							<strong data-i18n="partners.chip5.title">MSS detection</strong>
+							<span data-i18n="partners.chip5.desc">Chrono crosshair prediction</span>
+						</div>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="features animate-section" id="features">
+			<div class="section-head section-head-centered">
+				<p class="eyebrow" data-i18n="features.eyebrow">Core modules</p>
+				<h2 data-i18n="features.heading">A complete arsenal to stay ahead</h2>
+				<p data-i18n="features.copy">Every function is tuned for a <span class="gold-text">premium</span> feel and stable ranked performance.</p>
+			</div>
+			<div class="feature-grid">
+				<article class="feature-card reveal">
+					<h3 data-i18n="features.card1.title">Aim Assist / Aimbot</h3>
+					<p data-i18n="features.card1.desc">Centralized colorbot management (capture, processing, automated click) with stealth and customization controls.</p>
+					<span class="tag gold-glow" data-i18n="features.card1.tag">Arduino aimbot</span>
+				</article>
+				<article class="feature-card reveal delay-1">
+					<h3 data-i18n="features.card2.title">Triggerbot</h3>
+					<p data-i18n="features.card2.desc">Optimized triggerbot delivering record reaction times whether you hold an angle or play sniper.</p>
+					<span class="tag gold-glow" data-i18n="features.card2.tag">MSS tracker</span>
+				</article>
+				<article class="feature-card reveal delay-2">
+					<h3 data-i18n="features.card3.title">Anti-recoil management</h3>
+					<p data-i18n="features.card3.desc">Recoil compensation synced to sprays to keep the crosshair aligned with natural behavior.</p>
+					<span class="tag gold-glow" data-i18n="features.card3.tag">Recoil suite</span>
+				</article>
+				<article class="feature-card reveal delay-3">
+					<h3 data-i18n="features.card4.title">PID/HID spoofing</h3>
+					<p data-i18n="features.card4.desc">Advanced Arduino/mouse emulation fully masks injection, avoids system flags, and bypasses Vanguard anti-cheat.</p>
+					<span class="tag gold-glow" data-i18n="features.card4.tag">Spoofer</span>
+				</article>
+			</div>
+		</section>
+
+		<section class="split animate-section">
+			<div class="section-head section-head-centered">
+				<p class="eyebrow" data-i18n="split.eyebrow">Showcase</p>
+				<h2 data-i18n="split.heading">SAOBOT demo video</h2>
+				<p data-i18n="split.copy">An immersive preview of the interface and modules in action before you import your own showcase.</p>
+			</div>
+			<div class="split-panel text reveal">
+				<p class="eyebrow" data-i18n="split.left.eyebrow">Why SAOBOT?</p>
+				<h2 data-i18n="split.left.heading">Designed for the tactical FPS scene</h2>
+				<p data-i18n="split.left.copy">Dark interface, luminous overlays, and instant controls mirror Riot&rsquo;s language while our security stack boosts the workflow.</p>
+				<ul>
+					<li data-i18n="split.list1">Contextual hotkeys with a discreet yet complete HUD.</li>
+					<li data-i18n="split.list2">95% undetectability in the current state.</li>
+					<li data-i18n="split.list3">Aimbot, Triggerbot, Anti-recoil, HID/PID spoofer.</li>
+					<li data-i18n="split.list4">Frequent updates.</li>
+					<li data-i18n="split.list5">Dedicated 24/7 Discord support.</li>
+				</ul>
+			</div>
+			<div class="split-panel reveal delay-1" aria-label="SAOBOT presentation video" data-i18n-attr="aria-label:split.video.aria">
+				<div class="video-frame">
+					<iframe class="preview-video" src="https://drive.google.com/file/d/1CGJU7LvR1S7DH6Wtj-kpz5OkbFMVpLQg/preview" title="SAOBOT official showcase" allow="autoplay" loading="lazy"></iframe>
+					<p class="video-hint" data-i18n="split.video.caption">Demo video – Official SAOBOT presentation.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="community animate-section" id="community">
+			<div class="section-head section-head-centered">
+				<p class="eyebrow" data-i18n="community.eyebrow">Community</p>
+				<h2 data-i18n="community.heading">An active, moderated base</h2>
+				<p data-i18n="community.copy">Support, ready-to-use profiles, and hardware requirements gathered inside a single secure hub.</p>
+			</div>
+			<div class="community-grid">
+				<article class="community-card">
+					<div class="value">STAFF</div>
+					<p class="label" data-i18n="community.card1.label">Active Discord members with a dedicated ticket system</p>
+					<span class="note" data-i18n="community.card1.note">Instant support and private channels</span>
+				</article>
+				<article class="community-card">
+					<div class="value count-up" data-count="10" data-suffix="+" data-duration="4000">0</div>
+					<p class="label" data-i18n="community.card2.label">Ready-to-use preconfigured profiles for users</p>
+					<span class="note" data-i18n="community.card2.note">Rapid switch between Aimbot / Triggerbot / Autoshoot / Anti-recoil</span>
+				</article>
+				<article class="community-card">
+					<div class="value">Arduino Leonardo</div>
+					<p class="label" data-i18n="community.card3.label">Required to enable secure HID injection and SAOBOT features</p>
+					<span class="note" data-i18n="community.card3.note">Invisible hardware spoofing and reliability</span>
+				</article>
+				<article class="community-card">
+					<div class="value">CHEAT CORE</div>
+					<p class="label" data-i18n="community.card4.label">Aimbot / Triggerbot / Anti-recoil modules ready to deploy</p>
+					<span class="note" data-i18n="community.card4.note">Legit and rage profiles included</span>
+				</article>
+			</div>
+		</section>
+
+		<section class="pricing animate-section" id="pricing">
+			<div class="section-head section-head-centered">
+				<p class="eyebrow" data-i18n="pricing.eyebrow">Launch offer</p>
+				<h2 data-i18n="pricing.heading">Simple licenses, instant results</h2>
+			</div>
+			<div class="pricing-card reveal">
+				<div class="badge" data-i18n="pricing.badge">Best seller</div>
+				<h3 class="gold-title" data-i18n="pricing.title">ULTIMATE Pack</h3>
+				<p class="price" data-i18n="pricing.price">9,99€ / month</p>
+				<p data-i18n="pricing.copy">Full access to <span class="gold-text">SAOBOT</span> modules, updates, and <span class="gold-text">premium</span> support for only 9.99€ per month.</p>
+				<p class="trial-note" data-i18n="pricing.trial">Still unsure? Use the <strong>SAO-TRIAL</strong> license for a 1-hour session with every module, no commitment.</p>
+				<ul>
+					<li data-i18n="pricing.list1">Aim assist + auto aim + aimbot + autoshoot.</li>
+					<li data-i18n="pricing.list2">Optimized triggerbot with 4&nbsp;ms reactions.</li>
+					<li data-i18n="pricing.list3">Enhanced multi-profile recoil management for every weapon.</li>
+					<li data-i18n="pricing.list4">PID/HID/Arduino spoofing to bypass Vanguard anti-cheat.</li>
+					<li data-i18n="pricing.list5">Premium Discord support 24/7.</li>
+					<li data-i18n="pricing.list6">Regular updates included.</li>
+				</ul>
+				<div class="pricing-cta">
+					<button class="primary checkout-btn" type="button" data-checkout-url="https://buy.stripe.com/5kQdR947SdUg8XI4d51ZS00" data-i18n="pricing.buy">Buy now</button>
+					<a class="secondary glow-btn gold-glow" href="https://github.com/Seikoooo/SAOBOT-GUI-COLOROBT-EN/releases/download/2.0/SaobotSetup.exe" download title="Download the SAOBOT installer" data-i18n="pricing.download" data-i18n-attr="title:header.download.title">Download</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq animate-section" id="faq">
+			<div class="section-head section-head-centered">
+				<p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+				<h2 data-i18n="faq.heading">Your questions, our answers</h2>
+			</div>
+			<div class="faq-list">
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q1">How does the aim assist stay discreet?</button>
+					<p class="faq-answer" data-i18n="faq.a1">Vector smoothing reproduces human movement with micro-variations while staying within tournament-accepted input ranges.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q2">Is the aimbot configurable?</button>
+					<p class="faq-answer" data-i18n="faq.a2">Yes. Adjust speed, head/body focus, offsets, and snapping strength. Legit presets cap acceleration to maintain a human signature.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q3">Can I disable auto aim on the fly?</button>
+					<p class="faq-answer" data-i18n="faq.a3">Every module ships with a configurable toggle hotkey plus a panic mode that instantly kills all assistance.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q4">How is the triggerbot calibrated?</button>
+					<p class="faq-answer" data-i18n="faq.a4">The triggerbot reads enemy color or box via MSS. You set the firing delay (down to 4&nbsp;ms) and the weapons involved to avoid unwanted shots.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q5">How do I manage the assist FOV?</button>
+					<p class="faq-answer" data-i18n="faq.a5">The dashboard provides a circular or square FOV slider with live preview. Assign different FOV values per weapon or role profile.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q6">Is PID/HID spoofing compatible with every mouse?</button>
+					<p class="faq-answer" data-i18n="faq.a6">We emulate a standard USB bus with dynamic HID profiles, covering 99% of mice, including wireless models through their dongles.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q7">Does the spoofer leave visible traces?</button>
+					<p class="faq-answer" data-i18n="faq.a7">The spoofer rewrites PID/HID/VID in volatile memory then restores original values on exit. No persistent driver is installed, and a purge button cleans USB logs.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q8">What ban rate have you observed?</button>
+					<p class="faq-answer" data-i18n="faq.a8">Over the last 12 months we stayed below 1% confirmed reports. Stick to legit presets, avoid massive FOV spikes, and update SAOBOT whenever Vanguard patches.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q9">How does autoshoot work?</button>
+					<p class="faq-answer" data-i18n="faq.a9">Autoshoot relies on MSS triggers and adds a 2-6&nbsp;ms jitter to stay human. You can limit it to short bursts or single-shot weapons.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q10">Does anti-recoil adapt to each weapon?</button>
+					<p class="faq-answer" data-i18n="faq.a10">Yes. Each profile includes a specific X/Y pattern. SAOBOT analyzes fire rate and applies micro corrections to follow buffs/nerfs without manual tweaks.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q11">Will the price change after beta?</button>
+					<p class="faq-answer" data-i18n="faq.a11">Existing accounts keep the €9.99 monthly price. New licenses may evolve once the 2026 roadmap lands, but your rate is locked.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q12">Which payment methods do you accept?</button>
+					<p class="faq-answer" data-i18n="faq.a12">We accept credit cards (Visa, Mastercard), PayPal, and crypto (BTC, ETH, USDT). Renewals are monthly and automatic, but you can pause or top up manually.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q13">How is license activation handled?</button>
+					<p class="faq-answer" data-i18n="faq.a13">Each license binds to a single PC through a hardware fingerprint. Payments are monthly with no commitment, and access pauses automatically if you stop renewing.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q14">Can I use SAOBOT without an Arduino?</button>
+					<p class="faq-answer" data-i18n="faq.a14">No. The Arduino Leonardo handles secure HID injection and spoofing, which keeps inputs stealthy and undetected. Without it, core modules simply refuse to start for safety reasons.</p>
+				</article>
+				<article class="faq-item">
+					<button class="faq-question" data-i18n="faq.q15">I didn’t receive my license email. What now?</button>
+					<p class="faq-answer" data-i18n="faq.a15">Check your spam or promotions folder first; most missing emails land there within minutes. Only contact support after verifying those tabs to avoid duplicate requests.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="cta animate-section" id="cta">
+			<div>
+				<p class="eyebrow" data-i18n="cta.eyebrow">Rapid activation</p>
+				<h2 data-i18n="cta.heading">Ready to activate SAOBOT?</h2>
+				<p data-i18n="cta.copy">
+					Unlock the ULTIMATE pack, enjoy ranked-optimized performance, and start a 1-hour discovery session with the SAO-TRIAL license before climbing to RADIANT.
+				</p>
+			</div>
+			<div class="cta-actions">
+				<button class="primary glow-btn gold-glow" data-scroll="#pricing" data-i18n="cta.buy">Buy</button>
+				<a class="secondary glow-btn" href="https://discord.gg/aQMcEPgUUa" target="_blank" rel="noopener" data-i18n="cta.discord">Discord</a>
+				<a class="ghost glow-btn gold-glow" href="https://github.com/Seikoooo/SAOBOT-GUI-COLOROBT-EN/releases/download/2.0/SaobotSetup.exe" download title="Download the SAOBOT installer" data-i18n="cta.download" data-i18n-attr="title:header.download.title">Download</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-legal">
+			<a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms of Use</a>
+			<span aria-hidden="true">&middot;</span>
+			<a href="license.html" class="footer-link" data-i18n="footer.license">License Agreement</a>
+			<span aria-hidden="true">&middot;</span>
+			<a href="https://discord.gg/aQMcEPgUUa" class="footer-link" target="_blank" rel="noopener" data-i18n="footer.discord">Official Discord</a>
+		</div>
+		<p data-i18n="footer.copy">© <span id="year"></span> SAOBOT. All rights reserved.</p>
+		<p data-i18n="footer.disclaimer">Product not affiliated with Riot Games. Use at your own risk.</p>
+	</footer>
+
+	<script src="assets/js/script.js" defer></script>
+</body>
+</html>

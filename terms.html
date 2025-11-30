@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-i18n="meta.title.terms">SAOBOT – Terms of Use</title>
+	<meta name="description" data-i18n-attr="content:meta.description.terms" content="Understand the official SAOBOT terms of use, payment policies, and compliance requirements.">
+	<link rel="icon" type="image/x-icon" href="assets/icons/colorbot.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="terms">
+	<canvas id="grid-canvas" aria-hidden="true"></canvas>
+	<header class="site-header">
+		<div class="header-left">
+			<div class="logo">
+				<img src="assets/icons/colorbot.ico" alt="SAOBOT logo">
+				<span>SAO</span><span>BOT</span>
+			</div>
+			<div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch" aria-label="Language switch">
+				<button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">
+					<span class="flag" aria-hidden="true">🇫🇷</span>
+					<span>FR</span>
+				</button>
+				<button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">
+					<span class="flag" aria-hidden="true">🇺🇸</span>
+					<span>EN</span>
+				</button>
+			</div>
+		</div>
+		<nav>
+			<a href="index.html#features" data-i18n="nav.features">Features</a>
+			<a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+			<a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+		</nav>
+		<div class="header-cta">
+			<button class="ghost glow-btn gold-glow" data-scroll="#legal" data-i18n="terms.cta">Legal</button>
+			<a class="primary glow-btn" href="https://github.com/Seikoooo/SAOBOT-GUI-COLOROBT-EN/releases/download/2.0/SaobotSetup.exe" download title="Download the SAOBOT installer" data-i18n="header.download" data-i18n-attr="title:header.download.title">Download</a>
+		</div>
+	</header>
+
+	<div class="disclaimer-banner">
+		<p data-i18n="disclaimer.text">Warning: SAOBOT is an educational tool for learning programming, image analysis, and software automation. Any use for cheating in games is prohibited and the sole responsibility of the user. We are not affiliated with any game publishers and disclaim all responsibility for legal or other consequences.</p>
+	</div>
+
+	<main>
+		<section class="hero animate-section" id="legal">
+			<div class="hero-text reveal">
+				<p class="eyebrow" data-i18n="terms.hero.eyebrow">Terms of Use</p>
+				<h1 data-i18n="terms.hero.heading">SAOBOT Legal Framework</h1>
+				<p class="lead" data-i18n="terms.hero.lead">
+					These terms govern every interaction with the SAOBOT software, services, and support channels. By purchasing or downloading SAOBOT you accept the clauses below.
+				</p>
+			</div>
+		</section>
+
+		<section class="animate-section">
+			<div class="section-head">
+				<p class="eyebrow" data-i18n="terms.section1.eyebrow">1. Access & Eligibility</p>
+				<h2 data-i18n="terms.section1.heading">Account ownership</h2>
+			</div>
+			<p data-i18n="terms.section1.copy">
+				Licenses are personal, tied to a unique hardware fingerprint, and may not be resold, shared, or transferred. SAOBOT reserves the right to revoke access if suspicious sharing, cracked loaders, or leaked builds are detected.
+			</p>
+		</section>
+
+		<section class="animate-section">
+			<div class="section-head">
+				<p class="eyebrow" data-i18n="terms.section2.eyebrow">2. Compliance</p>
+				<h2 data-i18n="terms.section2.heading">Anti-cheat & jurisdiction</h2>
+			</div>
+			<p data-i18n="terms.section2.copy">
+				Users must comply with their local laws and the policies of the games or platforms they connect to. SAOBOT is not affiliated with Riot Games or any publisher; you are solely responsible for the consequences of unauthorized automation.
+			</p>
+		</section>
+
+		<section class="animate-section">
+			<div class="section-head">
+				<p class="eyebrow" data-i18n="terms.section3.eyebrow">3. Payments & refunds</p>
+				<h2 data-i18n="terms.section3.heading">Billing policy</h2>
+			</div>
+			<p data-i18n="terms.section3.copy">
+				Payments are processed via Stripe. Renewals occur monthly until cancelled. Because SAOBOT provides immediate digital access, all sales are final; refunds are evaluated case-by-case only if no activation occurred.
+			</p>
+		</section>
+
+		<section class="animate-section">
+			<div class="section-head">
+				<p class="eyebrow" data-i18n="terms.section4.eyebrow">4. Hardware requirements</p>
+				<h2 data-i18n="terms.section4.heading">Arduino enforcement</h2>
+			</div>
+			<p data-i18n="terms.section4.copy">
+				An Arduino Leonardo (or compatible board approved by SAOBOT staff) is mandatory for HID spoofing and secure injection. Attempts to bypass the hardware check will permanently disable the license.
+			</p>
+		</section>
+
+		<section class="animate-section">
+			<div class="section-head">
+				<p class="eyebrow" data-i18n="terms.section5.eyebrow">5. Support & contact</p>
+				<h2 data-i18n="terms.section5.heading">Resolve legal questions</h2>
+			</div>
+			<p data-i18n="terms.section5.copy">
+				All legal or licensing inquiries must be sent through the official Discord (<a href="https://discord.gg/aQMcEPgUUa" target="_blank" rel="noopener">discord.gg/aQMcEPgUUa</a>). Provide proof of purchase and hardware fingerprint so the team can verify ownership.
+			</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-legal">
+			<a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms of Use</a>
+			<span aria-hidden="true">&middot;</span>
+			<a href="license.html" class="footer-link" data-i18n="footer.license">License Agreement</a>
+			<span aria-hidden="true">&middot;</span>
+			<a href="https://discord.gg/aQMcEPgUUa" class="footer-link" target="_blank" rel="noopener" data-i18n="footer.discord">Official Discord</a>
+		</div>
+		<p data-i18n="footer.copy">© <span id="year"></span> SAOBOT. All rights reserved.</p>
+		<p data-i18n="footer.disclaimer">Product not affiliated with Riot Games. Use at your own risk.</p>
+	</footer>
+
+	<script src="assets/js/script.js" defer></script>
+</body>
+</html>
