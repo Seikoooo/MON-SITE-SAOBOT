@@ -22,9 +22,25 @@ const translations = {
 		'hero.eyebrow': 'Educational assistance suite',
 		'hero.heading': 'Master your Aim with <span class="accent">SAOBOT</span>',
 		'hero.lead': 'Designed for educational and learning environments, SAOBOT combines aim assist, auto aim, recoil control, and hardware spoofing for ultra-stable, discreet sessions. Educational tool only.',
-		'hero.planButton': '€9.99/month plan',
+		'hero.planButton': 'Lock €9.99 flash price',
 		'hero.discord': 'Join Discord',
 		'hero.modules': 'Browse modules',
+		'hero.flash.ribbon': 'Launch offer · -50%',
+		'hero.flash.countdownLabel': 'Reset in',
+		'hero.flash.base': 'Base price €19.99',
+		'hero.flash.save': 'Guaranteed -50% drop',
+		'hero.flash.current': 'Flash deal',
+		'hero.flash.price': '€9.99',
+		'hero.flash.lock': 'Lock the €9.99 launch rate before the timer hits zero.',
+		'hero.flash.fact1.label': 'Batch',
+		'hero.flash.fact1.value': '50 seats',
+		'hero.flash.fact1.copy': 'Price jumps back to €19.99 once filled.',
+		'hero.flash.fact2.label': 'Instant discount',
+		'hero.flash.fact2.value': '-50%',
+		'hero.flash.fact2.copy': 'Timer-only trigger, no codes needed.',
+		'hero.flash.fact3.label': 'Rate lock',
+		'hero.flash.fact3.value': '€9.99',
+		'hero.flash.fact3.copy': 'Keep €9.99 for every renewal.',
 		'hero.badges.aria': 'Live SAOBOT status',
 		'hero.badge1.title': 'Live tracking',
 		'hero.badge1.subtitle': 'Smoothed vector path',
@@ -43,13 +59,33 @@ const translations = {
 		'hero.stats.precision': 'Average precision',
 		'hero.stats.reaction': 'Reaction time',
 		'hero.stats.security': 'Last 12 months',
+		'hardware.eyebrow': 'External architecture',
+		'hardware.heading': 'Why <span class="accent">SAOBOT</span> stays outside the ban radar',
+		'hardware.lead': 'Typical memory tools dig into the process. SAOBOT pushes everything through an Arduino HID bridge so nothing touches the protected game.',
+		'hardware.memory.badge': 'Legacy software',
+		'hardware.memory.title': 'Internal memory tools',
+		'hardware.memory.copy': 'Injected DLLs sniff RAM, patch functions, and spoof inputs from inside the game.',
+		'hardware.memory.item1': 'Easy signatures for anti-cheat scanners watching process hooks.',
+		'hardware.memory.item2': 'Traces left inside crash dumps, kernel logs, and Windows events.',
+		'hardware.memory.item3': 'Mass ban waves every time offsets break or detections update.',
+		'hardware.saobot.badge': 'SAOBOT method',
+		'hardware.saobot.title': 'External Arduino execution',
+		'hardware.saobot.copy': 'All calculations stay on the PC, but the Arduino Leonardo outputs the movement like a standard mouse.',
+		'hardware.saobot.item1': 'No memory edits: anti-cheat only sees legitimate HID packets.',
+		'hardware.saobot.item2': 'External stack keeps aim assist, triggerbot, and recoil controller invisible.',
+		'hardware.saobot.item3': 'Only repeated in-game spectator reports can trigger a manual review.',
+		'hardware.highlight': 'Because SAOBOT never injects into RAM, the Arduino bridge keeps anti-cheat blind. Playing smart makes manual reports the only remaining risk.',
+		'hardware.arduino.eyebrow': 'Need hardware?',
+		'hardware.arduino.heading': 'No Arduino yet?',
+		'hardware.arduino.copy': 'Grab a Leonardo board approved for SAOBOT workflows and unlock every feature.',
+		'hardware.arduino.button': 'Buy Arduino',
 		'partners.eyebrow': 'Ecosystem',
 		'partners.heading': 'SAOBOT System',
 		'partners.copy': 'Each aimbot, triggerbot, and hardware spoofing module keeps human-like behavior while surpassing typical human reaction limits.',
 		'partners.aria': 'SAOBOT flagship modules',
 		'partners.chip1.title': 'Saobot Function',
 		'partners.chip1.desc': 'Colorbot + snap 4&nbsp;ms',
-		'partners.chip2.title': 'Saobot Cheat',
+		'partners.chip2.title': 'Saobot Logiciel',
 		'partners.chip2.desc': 'Triggerbot jitter 2-5&nbsp;ms',
 		'partners.chip3.title': 'Saobot Suite',
 		'partners.chip3.desc': 'Multi-profile recoil macros',
@@ -73,7 +109,7 @@ const translations = {
 		'features.card4.desc': 'Advanced Arduino/mouse emulation that masks injection and bypasses certain security layers.',
 		'features.card4.tag': 'Spoofer',
 		'split.eyebrow': 'Showcase',
-		'split.heading': 'SAOBOT demo video',
+		'split.heading': '<span class="accent">SAOBOT</span> demo video',
 		'split.copy': 'An immersive capture of the interface and modules recorded during the latest SAOBOT presentation.',
 		'split.left.eyebrow': 'Why SAOBOT?',
 		'split.left.heading': 'Designed for technical learning',
@@ -101,8 +137,12 @@ const translations = {
 		'pricing.heading': 'Simple licenses, instant results',
 		'pricing.badge': 'Best seller',
 		'pricing.title': 'ULTIMATE Pack',
-		'pricing.price': '€9.99/month',
-		'pricing.copy': 'Full access to <span class="gold-text">SAOBOT</span> modules, updates, and <span class="gold-text">premium</span> support for only €9.99 per month.',
+		'pricing.price': '€9.99/month · was €19.99',
+		'pricing.flash.old': 'Base €19.99',
+		'pricing.flash.new': 'Deal €9.99',
+		'pricing.flash.badge': '-50%',
+		'pricing.flash.note': 'Lifetime lock while the flash promo runs.',
+		'pricing.copy': 'Full access to <span class="gold-text">SAOBOT</span> modules, updates, and <span class="gold-text">premium</span> support for €9.99 while the flash drop lasts (regular price €19.99).',
 		'pricing.trial': 'Doubt? Use the <strong>SAO-TRIAL</strong> license for 1 hour with all modules, no commitment.',
 		'pricing.list1': 'Aim assist + auto aim + aimbot + autoshoot.',
 		'pricing.list2': 'Optimized triggerbot with 4&nbsp;ms reactions.',
@@ -113,7 +153,7 @@ const translations = {
 		'pricing.buy': 'Buy now',
 		'pricing.download': 'Download',
 		'cta.eyebrow': 'Quick activation',
-		'cta.heading': 'Ready to activate SAOBOT?',
+		'cta.heading': 'Ready to activate <span class="accent">SAOBOT</span>?',
 		'cta.copy': 'Unlock the ULTIMATE pack, enjoy optimized performance, and start your 1-hour discovery session with SAO-TRIAL license before aiming for excellence.',
 		'cta.buy': 'Buy',
 		'cta.discord': 'Discord',
@@ -167,7 +207,7 @@ const translations = {
 		'meta.description.terms': 'Review the official SAOBOT terms of use, payment policies, and compliance requirements.',
 		'terms.cta': 'Legal notices',
 		'terms.hero.eyebrow': 'Terms of Use',
-		'terms.hero.heading': 'SAOBOT Legal Framework',
+		'terms.hero.heading': '<span class="accent">SAOBOT</span> Legal Framework',
 		'terms.hero.lead': 'These terms govern every interaction with the SAOBOT software, services, and support channels. By purchasing or downloading SAOBOT you accept the clauses below.',
 		'terms.section1.eyebrow': '1. Access and eligibility',
 		'terms.section1.heading': 'Account ownership',
@@ -188,7 +228,7 @@ const translations = {
 		'meta.description.license': 'Review the SAOBOT end-user license agreement and usage restrictions.',
 		'license.cta': 'Agreement',
 		'license.hero.eyebrow': 'License Agreement',
-		'license.hero.heading': 'SAOBOT End-User License',
+		'license.hero.heading': '<span class="accent">SAOBOT</span> End-User License',
 		'license.hero.lead': 'This document specifies the scope of the license granted to each SAOBOT customer: limitations, update policy, and termination reasons.',
 		'license.section1.eyebrow': '1. License grant',
 		'license.section1.heading': 'Single-user restriction',
@@ -228,9 +268,25 @@ const translations = {
 		'hero.eyebrow': 'Suite d\'assistance éducative',
 		'hero.heading': 'Maîtrisez votre Aim avec <span class="accent">SAOBOT</span>',
 		'hero.lead': 'Conçu pour les environnements éducatifs et d\'apprentissage, SAOBOT combine aim assist, auto aim, contrôle du recul et spoofing matériel pour des sessions ultra stables et discrètes. Outil pédagogique uniquement.',
-		'hero.planButton': 'Formule 9,99&nbsp;€ / mois',
+		'hero.planButton': 'Bloquer l\'offre 9,99&nbsp;€',
 		'hero.discord': 'Rejoindre Discord',
 		'hero.modules': 'Explorer les modules',
+		'hero.flash.ribbon': 'Offre de lancement · -50&nbsp;%',
+		'hero.flash.countdownLabel': 'Reset dans',
+		'hero.flash.base': 'Prix de base 19,99&nbsp;€',
+		'hero.flash.save': 'Remise garantie -50&nbsp;%',
+		'hero.flash.current': 'Offre flash',
+		'hero.flash.price': '9,99&nbsp;€',
+		'hero.flash.lock': 'Bloquez le 9,99&nbsp;€ de l\'offre de lancement avant que le chrono néon s\'éteigne.',
+		'hero.flash.fact1.label': 'Batch',
+		'hero.flash.fact1.value': '50 accès',
+		'hero.flash.fact1.copy': 'Retour à 19,99&nbsp;€ une fois rempli.',
+		'hero.flash.fact2.label': 'Remise instantanée',
+		'hero.flash.fact2.value': '-50&nbsp;%',
+		'hero.flash.fact2.copy': 'Aucun code, le timer décide.',
+		'hero.flash.fact3.label': 'Tarif figé',
+		'hero.flash.fact3.value': '9,99&nbsp;€',
+		'hero.flash.fact3.copy': 'Vous restez à 9,99&nbsp;€ même après reset.',
 		'hero.badges.aria': 'Statut en direct de SAOBOT',
 		'hero.badge1.title': 'Suivi en direct',
 		'hero.badge1.subtitle': 'Trajectoire vectorielle lissée',
@@ -249,13 +305,33 @@ const translations = {
 		'hero.stats.precision': 'Précision moyenne',
 		'hero.stats.reaction': 'Temps de réaction',
 		'hero.stats.security': '12 derniers mois',
+		'hardware.eyebrow': 'Architecture externe',
+		'hardware.heading': 'Pourquoi <span class="accent">SAOBOT</span> échappe au radar',
+		'hardware.lead': 'La plupart des logiciels mémoire lisent le jeu de l’intérieur. SAOBOT redirige tout via un pont Arduino HID pour rester hors du process protégé.',
+		'hardware.memory.badge': 'Logiciels classiques',
+		'hardware.memory.title': 'Outils mémoire internes',
+		'hardware.memory.copy': 'Des DLL injectées lisent la RAM, patchent des fonctions et simulent des entrées depuis le jeu.',
+		'hardware.memory.item1': 'Détectés par les anti-cheats qui traquent hooks et signatures.',
+		'hardware.memory.item2': 'Laissent des traces dans les crash dumps et les journaux Windows.',
+		'hardware.memory.item3': 'Ban waves massives dès qu’un offset casse ou qu’une détection évolue.',
+		'hardware.saobot.badge': 'Méthode SAOBOT',
+		'hardware.saobot.title': 'Exécution Arduino externe',
+		'hardware.saobot.copy': 'Les calculs restent sur le PC mais l’Arduino Leonardo envoie les mouvements comme une souris standard.',
+		'hardware.saobot.item1': 'Aucune écriture mémoire : l’anti-cheat ne voit que du HID légitime.',
+		'hardware.saobot.item2': 'Pile externe = aim assist, triggerbot et anti-recul totalement invisibles.',
+		'hardware.saobot.item3': 'Seuls des reports répétés par les spectateurs peuvent mener à une vérification.',
+		'hardware.highlight': 'Sans injection ni lecture mémoire, l’Arduino rend l’anti-cheat aveugle. Restez “legit” : seuls les reports in-game représentent un risque.',
+		'hardware.arduino.eyebrow': 'Pas d’Arduino ?',
+		'hardware.arduino.heading': 'Achetez-le ici',
+		'hardware.arduino.copy': 'Commandez une carte Leonardo approuvée pour débloquer toutes les fonctions SAOBOT.',
+		'hardware.arduino.button': 'Acheter l’Arduino',
 		'partners.eyebrow': 'Écosystème',
 		'partners.heading': 'SAOBOT System',
 		'partners.copy': 'Chaque module d\'aimbot, triggerbot et spoofing matériel garde un fonctionnement humain tout en dépassant les limites humaines de réaction.',
 		'partners.aria': 'Modules phares de SAOBOT',
 		'partners.chip1.title': 'Saobot Function',
 		'partners.chip1.desc': 'Colorbot + snap 4&nbsp;ms',
-		'partners.chip2.title': 'Saobot Cheat',
+		'partners.chip2.title': 'Saobot Logiciel',
 		'partners.chip2.desc': 'Triggerbot jitter 2-5&nbsp;ms',
 		'partners.chip3.title': 'Saobot Suite',
 		'partners.chip3.desc': 'Macros de recul multi-profils',
@@ -279,7 +355,7 @@ const translations = {
 		'features.card4.desc': 'Émulation avancée Arduino/souris qui masque l\'injection et contourne certaines sécurités.',
 		'features.card4.tag': 'Spoofer',
 		'split.eyebrow': 'Showcase',
-		'split.heading': 'Vidéo démo SAOBOT',
+		'split.heading': 'Vidéo démo <span class="accent">SAOBOT</span>',
 		'split.copy': 'Un aperçu immersif de l\'interface et des modules enregistré lors de la dernière présentation SAOBOT.',
 		'split.left.eyebrow': 'Pourquoi SAOBOT ?',
 		'split.left.heading': 'Conçu pour l\'apprentissage technique',
@@ -307,8 +383,12 @@ const translations = {
 		'pricing.heading': 'Licences simples, résultats instantanés',
 		'pricing.badge': 'Meilleure vente',
 		'pricing.title': 'Pack ULTIMATE',
-		'pricing.price': '9,99&nbsp;€ / mois',
-		'pricing.copy': 'Accès complet aux modules <span class="gold-text">SAOBOT</span>, aux mises à jour et au support <span class="gold-text">premium</span> pour seulement 9,99&nbsp;€ par mois.',
+		'pricing.price': '9,99&nbsp;€ / mois · avant 19,99&nbsp;€',
+		'pricing.flash.old': 'Base 19,99&nbsp;€',
+		'pricing.flash.new': 'Offre 9,99&nbsp;€',
+		'pricing.flash.badge': '-50&nbsp;%',
+		'pricing.flash.note': 'Tarif figé tant que la promo flash reste active.',
+		'pricing.copy': 'Accès complet aux modules <span class="gold-text">SAOBOT</span>, aux mises à jour et au support <span class="gold-text">premium</span> pour 9,99&nbsp;€ tant que le drop flash est actif (tarif de base 19,99&nbsp;€).',
 		'pricing.trial': 'Un doute ? Utilisez la licence <strong>SAO-TRIAL</strong> pendant 1 heure avec tous les modules, sans engagement.',
 		'pricing.list1': 'Aim assist + auto aim + aimbot + autoshoot.',
 		'pricing.list2': 'Triggerbot optimisé avec réactions de 4&nbsp;ms.',
@@ -319,7 +399,7 @@ const translations = {
 		'pricing.buy': 'Acheter maintenant',
 		'pricing.download': 'Télécharger',
 		'cta.eyebrow': 'Activation rapide',
-		'cta.heading': 'Prêt à activer SAOBOT ?',
+		'cta.heading': 'Prêt à activer <span class="accent">SAOBOT</span> ?',
 		'cta.copy': 'Débloquez le pack ULTIMATE, profitez de performances optimisées pour le classé et lancez votre session découverte d\'une heure avec la licence SAO-TRIAL avant de viser le top rank.',
 		'cta.buy': 'Acheter',
 		'cta.discord': 'Discord',
@@ -373,7 +453,7 @@ const translations = {
 		'meta.description.terms': 'Consultez les conditions d\'utilisation officielles de SAOBOT, la politique de paiement et les exigences de conformité.',
 		'terms.cta': 'Mentions légales',
 		'terms.hero.eyebrow': 'Conditions d\'utilisation',
-		'terms.hero.heading': 'Cadre légal SAOBOT',
+		'terms.hero.heading': 'Cadre légal <span class="accent">SAOBOT</span>',
 		'terms.hero.lead': 'Ces conditions couvrent le logiciel, les services et les canaux de support SAOBOT. Tout achat ou téléchargement implique l\'acceptation intégrale des clauses ci-dessous.',
 		'terms.section1.eyebrow': '1. Accès et éligibilité',
 		'terms.section1.heading': 'Propriété du compte',
@@ -394,7 +474,7 @@ const translations = {
 		'meta.description.license': 'Consultez le contrat de licence utilisateur final et les restrictions d\'utilisation de SAOBOT.',
 		'license.cta': 'Contrat',
 		'license.hero.eyebrow': 'Contrat de licence',
-		'license.hero.heading': 'Licence utilisateur SAOBOT',
+		'license.hero.heading': 'Licence utilisateur <span class="accent">SAOBOT</span>',
 		'license.hero.lead': 'Ce document précise la portée de la licence accordée à chaque client SAOBOT : limitations, politique de mise à jour et motifs de résiliation.',
 		'license.section1.eyebrow': '1. Octroi de licence',
 		'license.section1.heading': 'Restriction mono-utilisateur',
@@ -586,6 +666,87 @@ const initCounters = () => {
 	counters.forEach((counter) => observer.observe(counter));
 };
 
+const formatCountdown = (ms) => {
+	const totalSeconds = Math.max(0, Math.floor(ms / 1000));
+	const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+	const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+	const seconds = String(totalSeconds % 60).padStart(2, '0');
+	return `${hours}h ${minutes}m ${seconds}s`;
+};
+
+const initFlashSaleExperience = () => {
+	const sale = document.querySelector('[data-flash-sale]');
+	if (!sale) return;
+
+	const countdownEl = sale.querySelector('[data-countdown-output]');
+	const countdownHours = Number(sale.dataset.countdownHours) || 4;
+	const storageKey = 'saobot-flash-ends';
+
+	const getStoredTarget = () => {
+		const now = Date.now();
+		let stored = Number.NaN;
+		try {
+			stored = Number(sessionStorage.getItem(storageKey));
+		} catch (error) {
+			stored = Number.NaN;
+		}
+		if (!Number.isFinite(stored) || stored <= now) {
+			stored = now + countdownHours * 60 * 60 * 1000;
+			try {
+				sessionStorage.setItem(storageKey, String(stored));
+			} catch (error) {
+				/* ignore */
+			}
+		}
+		return stored;
+	};
+
+	if (countdownEl) {
+		let target = getStoredTarget();
+		const interval = setInterval(() => {
+			const remaining = target - Date.now();
+			if (remaining <= 0) {
+				countdownEl.textContent = '00h 00m 00s';
+				sale.classList.add('flash-sale--expired');
+				clearInterval(interval);
+				return;
+			}
+			countdownEl.textContent = formatCountdown(remaining);
+		}, 1000);
+		countdownEl.textContent = formatCountdown(target - Date.now());
+	}
+
+	const meter = sale.querySelector('[data-meter]');
+	if (meter) {
+		const total = Number(meter.dataset.meterTotal) || 50;
+		let current = Number(meter.dataset.meterStart);
+		if (!Number.isFinite(current) || current <= 0) current = total;
+		current = Math.min(total, Math.max(2, current));
+		const min = Math.max(1, Math.round(total * 0.15));
+		const currentEl = meter.querySelector('[data-meter-current]');
+		const totalEl = meter.querySelector('[data-meter-total]');
+		const fillEl = meter.querySelector('[data-meter-fill]');
+		if (totalEl) totalEl.textContent = total;
+		const renderMeter = () => {
+			const progress = (current / total) * 100;
+			if (currentEl) currentEl.textContent = current;
+			if (fillEl) fillEl.style.width = `${Math.max(6, progress)}%`;
+		};
+		renderMeter();
+		const scheduleDrop = () => {
+			if (current <= min) return;
+			const delay = (12 + Math.random() * 24) * 1000;
+			setTimeout(() => {
+				if (current <= min) return;
+				current -= 1;
+				renderMeter();
+				scheduleDrop();
+			}, delay);
+		};
+		scheduleDrop();
+	}
+};
+
 const initCheckoutRedirect = () => {
 	const buttons = document.querySelectorAll('[data-checkout-url]');
 	if (!buttons.length) return;
@@ -713,5 +874,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	initSectionAnimations();
 	initCounters();
 	initCheckoutRedirect();
+	initFlashSaleExperience();
 	initLanguageSwitcher();
 });
