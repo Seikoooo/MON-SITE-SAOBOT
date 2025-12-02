@@ -2,7 +2,7 @@ const DEFAULT_LANG = 'en';
 const LANG_STORAGE_KEY = 'saobot-lang';
 const translations = {
 	en: {
-		'meta.title.home': 'SAOBOT - Educational Tool',
+		'meta.title.home': 'SAOBOT',
 		'meta.description.home': 'SAOBOT is an educational tool for learning programming, image analysis, and software automation. Any use for cheating in games is prohibited and the sole responsibility of the user.',
 		'testimonials.card13.name': 'Lambda',
 		'testimonials.card13.role': 'Radiant',
@@ -1104,3 +1104,4 @@ document.addEventListener('DOMContentLoaded', () => {
 	initDemoModal();
 	initLanguageSwitcher();
 });
+
