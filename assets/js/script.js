@@ -29,6 +29,12 @@ const translations = {
 		'features.card4.title': 'PID/HID spoofing',
 		'features.card4.desc': 'Advanced Arduino/mouse emulation that masks injection and bypasses certain security layers.',
 		'features.card4.tag': 'Spoofer',
+		'hardware.arduino.eyebrow': 'Need hardware?',
+		'hardware.arduino.heading': 'No Arduino yet?',
+		'hardware.arduino.copy': 'Grab a Leonardo board approved for SAOBOT workflows and unlock every feature.',
+		'hardware.arduino.button': 'Buy Arduino',
+		'hardware.arduino.download.text': 'Download the code to upload to the Arduino',
+		'hardware.arduino.download.button': 'Download Arduino Code',
 		'split.eyebrow': 'Showcase',
 		'split.heading': 'Rapid <span class="accent">SAOBOT</span> previews',
 		'split.copy': 'Three short clips highlight the core modules so you can sample the experience before diving deeper.',
@@ -1104,4 +1110,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	initDemoModal();
 	initLanguageSwitcher();
 });
-
