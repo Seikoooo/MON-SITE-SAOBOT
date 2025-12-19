@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5ZH7DD7M');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="tutorial.meta.title">SAOBOT – Installation tutorial</title>
+    <meta name="description" data-i18n-attr="content:tutorial.meta.description" content="Watch the full 32-minute SAOBOT onboarding tutorial covering downloads, Arduino wiring, and dashboard activation.">
+    <link rel="icon" type="image/x-icon" href="assets/icons/colorbot.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- TikTok Pixel Code Start -->
+    <script>
+        !function (w, d, t) {
+            w.TiktokAnalyticsObject = t;
+            var ttq = w[t] = w[t] || [];
+            ttq.methods = [
+                'page',
+                'track',
+                'identify',
+                'instances',
+                'debug',
+                'on',
+                'off',
+                'once',
+                'ready',
+                'alias',
+                'group',
+                'enableCookie',
+                'disableCookie',
+                'holdConsent',
+                'revokeConsent',
+                'grantConsent',
+            ];
+            ttq.setAndDefer = function (tgt, method) {
+                tgt[method] = function () {
+                    tgt.push([method].concat(Array.prototype.slice.call(arguments, 0)));
+                };
+            };
+            for (var i = 0; i < ttq.methods.length; i += 1) {
+                ttq.setAndDefer(ttq, ttq.methods[i]);
+            }
+            ttq.instance = function (id) {
+                for (var inst = ttq._i[id] || [], j = 0; j < ttq.methods.length; j += 1) {
+                    ttq.setAndDefer(inst, ttq.methods[j]);
+                }
+                return inst;
+            };
+            ttq.load = function (pixelId, config) {
+                var src = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+                var partner = config && config.partner;
+                ttq._i = ttq._i || {};
+                ttq._i[pixelId] = [];
+                ttq._i[pixelId]._u = src;
+                ttq._t = ttq._t || {};
+                ttq._t[pixelId] = +new Date();
+                ttq._o = ttq._o || {};
+                ttq._o[pixelId] = config || {};
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = src + '?sdkid=' + pixelId + '&lib=' + t;
+                var insertBefore = document.getElementsByTagName('script')[0];
+                insertBefore.parentNode.insertBefore(script, insertBefore);
+            };
+
+            ttq.load('D4N186RC77U3F3CUCE60');
+            ttq.page();
+        }(window, document, 'ttq');
+    </script>
+    <!-- TikTok Pixel Code End -->
+</head>
+<body data-page="tutorial">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZH7DD7M"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <canvas id="grid-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+        <div class="header-left">
+            <div class="logo">
+                <img src="assets/icons/colorbot.ico" alt="SAOBOT logo">
+                <span>SAO</span><span>BOT</span>
+            </div>
+            <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch" aria-label="Language switch">
+                <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">
+                    <span class="flag" aria-hidden="true">🇫🇷</span>
+                    <span>FR</span>
+                </button>
+                <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">
+                    <span class="flag" aria-hidden="true">🇺🇸</span>
+                    <span>EN</span>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html#features" data-scroll="#features" data-i18n="nav.features">Features</a>
+            <a href="index.html#pricing" data-scroll="#pricing" data-i18n="nav.pricing">Pricing</a>
+            <a href="index.html#faq" data-scroll="#faq" data-i18n="nav.faq">FAQ</a>
+            <a href="tutorial.html" class="is-active" data-i18n="nav.tutorial">Tutorial</a>
+        </nav>
+        <div class="header-cta">
+            <a class="ghost glow-btn gold-glow" href="index.html#pricing" data-scroll="#pricing" data-i18n="header.buy">Buy</a>
+            <a class="primary glow-btn" href="https://github.com/Seikoooo/SAOBOT-GUI-COLOROBT-EN/releases/download/2.1/SaobotSetup.exe" download title="Download the SAOBOT installer" data-i18n="header.download" data-i18n-attr="title:header.download.title">Download</a>
+        </div>
+    </header>
+
+    <div class="disclaimer-banner">
+        <p data-i18n="disclaimer.text">Warning: SAOBOT is an educational tool for learning programming, image analysis, and software automation. Any use for cheating in games is prohibited and the sole responsibility of the user. We are not affiliated with any game publishers and disclaim all responsibility for legal or other consequences.</p>
+    </div>
+
+    <main>
+        <section class="setup animate-section" id="tutorial-guide">
+            <div class="section-head section-head-centered">
+                <p class="eyebrow" data-i18n="tutorial.hero.eyebrow">Full setup guide</p>
+                <h1 data-i18n="tutorial.hero.heading">32-minute onboarding tutorial</h1>
+                <p data-i18n="tutorial.hero.lead">Follow the complete workflow from download to HID spoofing, licensing, and dashboard configuration.</p>
+            </div>
+            <div class="setup-body">
+                <div class="video-frame" aria-label="SAOBOT setup tutorial" data-i18n-attr="aria-label:setup.video.aria">
+                    <button class="demo-expand" type="button" data-video-src="https://drive.google.com/file/d/1CGJU7LvR1S7DH6Wtj-kpz5OkbFMVpLQg/preview" data-video-title="SAOBOT official showcase" aria-label="Expand video" data-i18n-attr="aria-label:split.demo.expand"><span aria-hidden="true">⤢</span></button>
+                    <iframe class="preview-video" src="https://drive.google.com/file/d/1CGJU7LvR1S7DH6Wtj-kpz5OkbFMVpLQg/preview" title="SAOBOT official showcase" allow="autoplay" loading="lazy" allowfullscreen></iframe>
+                    <p class="video-hint" data-i18n="setup.video.caption">Full tutorial – 32 minutes of guided setup.</p>
+                </div>
+                <p class="eyebrow small" data-i18n="tutorial.steps.title">What you will cover</p>
+                <div class="tutorial-steps">
+                    <article class="tutorial-step">
+                        <h3 data-i18n="tutorial.steps.card1">Download & verify</h3>
+                        <p data-i18n="tutorial.steps.item1">Download SAOBOT, required drivers, and verify the installer integrity.</p>
+                    </article>
+                    <article class="tutorial-step">
+                        <h3 data-i18n="tutorial.steps.card2">Wire & spoof</h3>
+                        <p data-i18n="tutorial.steps.item2">Wire and flash the Arduino Leonardo while cloning HID/PID identifiers.</p>
+                    </article>
+                    <article class="tutorial-step">
+                        <h3 data-i18n="tutorial.steps.card3">Profile building</h3>
+                        <p data-i18n="tutorial.steps.item3">Configure dashboard profiles for aim assist, triggerbot, and anti-recoil presets.</p>
+                    </article>
+                    <article class="tutorial-step">
+                        <h3 data-i18n="tutorial.steps.card4">Safety & fixes</h3>
+                        <p data-i18n="tutorial.steps.item4">Test safety toggles, panic hotkeys, and solve the most common activation issues.</p>
+                    </article>
+                </div>
+                <div class="tutorial-actions">
+                    <a class="ghost glow-btn gold-glow" href="index.html" data-i18n="tutorial.cta.back">Back to homepage</a>
+                    <a class="primary glow-btn gold-glow" href="https://github.com/Seikoooo/SAOBOT-GUI-COLOROBT-EN/releases/download/2.1/SaobotSetup.exe" download title="Download the SAOBOT installer" data-i18n="tutorial.cta.download" data-i18n-attr="title:header.download.title">Download SAOBOT installer</a>
+                    <a class="secondary glow-btn" href="index.html#pricing" data-scroll="#pricing" data-i18n="tutorial.cta.pricing">See pricing plan</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-legal">
+            <a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms of Use</a>
+            <a href="license.html" class="footer-link" data-i18n="footer.license">License agreement</a>
+            <a href="https://discord.gg/aQMcEPgUUa" class="footer-link" target="_blank" rel="noopener" data-i18n="footer.discord">Official Discord</a>
+        </div>
+        <p data-i18n="footer.copy">© <span id="year"></span> SAOBOT. All rights reserved.</p>
+        <p class="footer-disclaimer" data-i18n="footer.disclaimer">Educational product not affiliated with game publishers. Use at your own risk. Any use for cheating is prohibited and your sole responsibility.</p>
+    </footer>
+
+    <div class="demo-modal" id="demo-modal" aria-hidden="true">
+        <div class="demo-modal-content" role="dialog" aria-label="SAOBOT video preview" aria-modal="true" data-i18n-attr="aria-label:split.demo.modal.aria">
+            <button class="demo-modal-close" type="button" data-modal-close aria-label="Close video" data-i18n-attr="aria-label:split.demo.close">&times;</button>
+            <div class="demo-modal-player">
+                <iframe class="demo-modal-frame" src="" title="SAOBOT video" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
